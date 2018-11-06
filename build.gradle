@@ -12,8 +12,8 @@ buildscript {
         mavenLocal()
     }
     dependencies {
-        classpath "com.ca.apim.gateway:gateway-developer-plugin:0.6.25"
-        classpath "com.ca.apim.gateway:gateway-export-plugin:0.6.25"
+        classpath "com.ca.apim.gateway:gateway-developer-plugin:0.6.24"
+        classpath "com.ca.apim.gateway:gateway-export-plugin:0.6.24"
     }
 }
 
