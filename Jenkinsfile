@@ -37,19 +37,19 @@ pipeline {
         stage('Testing Docker image') {
             steps {
                 script {
-//                    def jobDir = pwd()
+                    def jobDir = pwd()
 //                    env.GATEWAY_CONTAINER_ID = sh script: "docker run --env ACCEPT_LICENSE=true --env EXTRA_JAVA_ARGS=-Dcom.l7tech.bootstrap.env.license.enable=true --env SSG_LICENSE=\$(cat $jobDir/../../license.xml | gzip | base64 --wrap=0) -p 8080 -p 8443 -d ${env.NEW_IMAGE_NAME}:${env.NEW_IMAGE_TAG} | cut -c 1-12", returnStdout: true
 //                    env.GATEWAY_CONTAINER_IP = sh([script: "docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ${env.GATEWAY_CONTAINER_ID}", returnStdout: true]).trim()
                 }
 
                 timeout(4) {
-/*                    waitUntil {
+                    waitUntil {
                         script {
-                            def r = sh script: "wget http://${env.GATEWAY_CONTAINER_IP}:8080/quota", returnStatus: true
-                            return (r == 0);
+//                            def r = sh script: "wget http://${env.GATEWAY_CONTAINER_IP}:8080/quota", returnStatus: true
+//                            return (r == 0);
                         }
                     }
-*/
+
                 }
 //                sh "docker stop ${env.GATEWAY_CONTAINER_ID}"
             }
