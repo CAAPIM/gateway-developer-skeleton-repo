@@ -18,6 +18,10 @@ buildscript {
     }
 }
 
+plugins {
+    id "com.bmuschko.docker-remote-api" version "4.0.4"
+}
+
 apply plugin: 'com.ca.apim.gateway.gateway-export-plugin'
 apply plugin: 'com.ca.apim.gateway.gateway-developer-plugin'
 
@@ -41,4 +45,13 @@ repositories {
 
 wrapper {
     gradleVersion = '4.10.2'
+}
+
+// Import task types
+import com.bmuschko.gradle.docker.tasks.image.*
+
+// Use task types
+task buildDockerImage(type: DockerBuildImage) {
+    inputDir = file('./')
+    tag = System.getProperty("imageName") + ":" + System.getProperty("imageTag")
 }
