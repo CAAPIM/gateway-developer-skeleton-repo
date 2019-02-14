@@ -1,0 +1,10 @@
+demo/demo:
+  url: "/demo"
+  policy: "demo/demo"
+  httpMethods:
+  - "DELETE"
+  - "POST"
+  - "GET"
+  - "PUT"
+  properties:
+    servicePropColor: "green"
