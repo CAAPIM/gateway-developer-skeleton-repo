@@ -51,7 +51,7 @@ pipeline {
                     }
 
                 }
-//                sh "docker stop ${env.GATEWAY_CONTAINER_ID}"
+                sh "docker stop ${env.GATEWAY_CONTAINER_ID}"
             }
         }
 	   stage('Login Docker, Tag and push docker image to Nexus') {
