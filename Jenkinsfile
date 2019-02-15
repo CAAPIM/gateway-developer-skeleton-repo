@@ -3,12 +3,12 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPOSITORY = 'https://github.com/amoghsa/gateway-developer-skeleton-repo.git'
+        GIT_REPOSITORY = '<git.repository>'
         BASE_IMAGE_NAME = 'gateway'
         BASE_IMAGE_TAG = 'wlui-test'
         BASE_IMAGE_REGISTRY_HOSTNAME = 'docker.stable1.apimgcp.com'
         BASE_IMAGE_REGISTRY_REPOSITORY    = 'docker-hosted'
-        NEW_IMAGE_NAME = 'gateway'
+        NEW_IMAGE_NAME = '<image.name>'
         NEW_IMAGE_TAG = new Date().getTime()
         NEW_IMAGE_REGISTRY_HOSTNAME = 'docker.stable1.apimgcp.com'
         NEW_IMAGE_REGISTRY_REPOSITORY    = 'docker-hosted'
