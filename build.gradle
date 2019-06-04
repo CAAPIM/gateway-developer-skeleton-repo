@@ -6,14 +6,13 @@
 
 buildscript {
     repositories {
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-        mavenLocal()
+        gradlePluginPortal()
+        mavenCentral()
+        jcenter()
     }
     dependencies {
-        classpath "com.ca.apim.gateway:gateway-developer-plugin:0.6.+"
-        classpath "com.ca.apim.gateway:gateway-export-plugin:0.6.+"
+        classpath "com.ca.apim.gateway:gateway-developer-plugin:0.8.+"
+        classpath "com.ca.apim.gateway:gateway-export-plugin:0.8.+"
     }
 }
 
@@ -32,8 +31,8 @@ GatewayExportConfig {
 }
 
 repositories {
+    mavenCentral()
     jcenter()
-    mavenLocal()
 }
 
 wrapper {
