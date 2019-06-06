@@ -6,7 +6,7 @@ version: '3.4'
 services:
   gateway-dev:
     hostname: localhost
-    image: caapim/gateway:9.4.00
+    image: caapim/gateway:latest
     ports:
     - "8080:8080"
     - "8443:8443"
