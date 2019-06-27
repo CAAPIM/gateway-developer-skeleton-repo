@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPOSITORY = 'https://github.com/wynnel/gateway-developer-example'
+        GIT_REPOSITORY = 'https://github.com/YourGitUsername/gateway-developer-skeleton-repo.git'
         NEW_IMAGE_NAME = 'gateway'
         NEW_IMAGE_TAG = "${BUILD_NUMBER}"
         NEW_IMAGE_REGISTRY_REPOSITORY    = 'docker-hosted'
@@ -59,9 +59,9 @@ pipeline {
         }
 	   stage('Login Docker, Tag and push docker image to Nexus') {
             steps {
-		        sh """docker login ${env.NEW_IMAGE_REGISTRY_HOSTNAME} -u ${params.NEW_IMAGE_REGISTRY_USER} --password ${params.NEW_IMAGE_REGISTRY_PASSWORD}
-                     docker tag ${env.NEW_IMAGE_NAME}:${env.NEW_IMAGE_TAG} ${env.NEW_IMAGE_REGISTRY_HOSTNAME}/repository/${env.NEW_IMAGE_REGISTRY_REPOSITORY}/${env.NEW_IMAGE_NAME}:${env.NEW_IMAGE_TAG}
-			         docker push ${env.NEW_IMAGE_REGISTRY_HOSTNAME}/repository/${env.NEW_IMAGE_REGISTRY_REPOSITORY}/${env.NEW_IMAGE_NAME}:${env.NEW_IMAGE_TAG}"""
+		        sh """docker login ${params.NEW_IMAGE_REGISTRY_HOSTNAME} -u ${params.NEW_IMAGE_REGISTRY_USER} --password ${params.NEW_IMAGE_REGISTRY_PASSWORD}
+                     docker tag ${env.NEW_IMAGE_NAME}:${env.NEW_IMAGE_TAG} ${params.NEW_IMAGE_REGISTRY_HOSTNAME}/repository/${env.NEW_IMAGE_REGISTRY_REPOSITORY}/${env.NEW_IMAGE_NAME}:${env.NEW_IMAGE_TAG}
+			         docker push ${params.NEW_IMAGE_REGISTRY_HOSTNAME}/repository/${env.NEW_IMAGE_REGISTRY_REPOSITORY}/${env.NEW_IMAGE_NAME}:${env.NEW_IMAGE_TAG}"""
             }
         }
     }
