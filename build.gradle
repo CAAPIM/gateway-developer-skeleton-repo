@@ -13,7 +13,6 @@ buildscript {
     dependencies {
         classpath "com.ca.apim.gateway:gateway-developer-plugin:0.8.+"
         classpath "com.ca.apim.gateway:gateway-export-plugin:0.8.+"
-        classpath "com.bmuschko:gradle-docker-plugin:4.6.+"
     }
 }
 
@@ -38,16 +37,4 @@ repositories {
 
 wrapper {
     gradleVersion = '4.10.2'
-}
-//
-// Import task types
-import com.bmuschko.gradle.docker.tasks.image.*
-
-// Use task types
-task buildDockerImage(type: DockerBuildImage) {
-    apply plugin: 'com.bmuschko.docker-remote-api'
-    inputDir.set(file('./'))
-    tags.add(System.getProperty("imageName")+ ":" + System.getProperty("imageTag"))
-    labels = ['org.opencontainers.image.created': new Date().format("yyyy-MM-dd'T'HH:mm:ss'Z'", TimeZone.getTimeZone("UTC"))]
-    pull.set(true)
 }
