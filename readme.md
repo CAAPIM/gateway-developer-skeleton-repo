@@ -1,7 +1,7 @@
 # About
 This is a skeleton repository that you can use as a starting point for your gateway projects.
 
-In order to use this as a starting point for your projects, follow the instruction guide: [Single Module Gateway Setup](https://github.com/CAAPIM/gateway-developer-skeleton-repo/wiki/1.-Getting-Started-with-the-Gateway-Developer-Repository)
+In order to use this as a starting point for your projects, follow the instruction guide: [Single Module Gateway Setup](https://github.com/CAAPIM/gateway-developer-skeleton-repo/wiki/Getting-Started-with-the-Gateway-Developer-Repository)
 
 # Giving Back
 ## How You Can Contribute
