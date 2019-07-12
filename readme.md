@@ -1,5 +1,5 @@
 # About
-This is a skeleton repository that you can use as a starting point for your gateway projects. Fopr simplicity, this repository assumes your Gateway solution uses a single module. 
+This is a skeleton repository that you can use as a starting point for your gateway projects. For simplicity, this repository assumes your Gateway solution uses a single module. 
 
 To make use of the Gateway Developer plugin, your Gateway project should be structured like a typical Gradle project like the one shown here, which requires two configuration files - build.gradle and settings.gradle. 
 
