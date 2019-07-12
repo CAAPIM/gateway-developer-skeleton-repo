@@ -1,5 +1,5 @@
 # About
-This is a skeleton repository that you can use as a starting point for your gateway projects. Your Gateway project should be structured like a typical Gradle project like the one shown here, which requires two configuration files - build.gradle and settings.gradle. 
+This is a skeleton repository that you can use as a starting point for your gateway projects. To make use of the Gateway Developer plugin, your Gateway project should be structured like a typical Gradle project like the one shown here, which requires two configuration files - build.gradle and settings.gradle. 
 
 In order to use this as a starting point for your projects, follow the instruction guide: [Single Module Gateway Setup](https://github.com/CAAPIM/gateway-developer-skeleton-repo/wiki/Getting-Started-with-the-Gateway-Developer-Repository)
 
