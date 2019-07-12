@@ -3,7 +3,7 @@ This is a skeleton repository that you can use as a starting point for your gate
 
 To make use of the Gateway Developer plugin, your Gateway project should be structured like a typical Gradle project like the one shown here, which requires two configuration files - build.gradle and settings.gradle. 
 
-Learn how to set up your single-module Gateway solution by following the instructions in this repository's wiki: [Configure the Skeleton Repo](https://github.com/CAAPIM/gateway-developer-skeleton-repo/wiki/configure-the-skeleton-repo).
+Learn how to set up your single-module Gateway solution by following the instructions in this repository's wiki: [Configure the Gateway Skeleton Repo](https://github.com/CAAPIM/gateway-developer-skeleton-repo/wiki/configure-the-gateway-skeleton-repo).
 
 # Giving Back
 ## How You Can Contribute
