@@ -1,9 +1,12 @@
 # About
 This is a skeleton repository that you can use as a starting point for your gateway projects. For simplicity, this repository assumes your Gateway solution uses a **single module**. 
 
-To make use of the Gateway Developer plugin, your Gateway project should be structured like a typical Gradle project like the one shown here, which requires two configuration files - build.gradle and settings.gradle. 
+To make use of the Gateway Policy Plugin, your Gateway project should be structured like a typical Gradle project like the one shown here, which requires two configuration files - build.gradle and settings.gradle. 
 
-Learn how to set up your single-module Gateway solution by following the instructions in this repository's wiki: [Configure the Gateway Skeleton Repo](https://github.com/CAAPIM/gateway-developer-skeleton-repo/wiki/configure-gateway-skeleton-repo).
+Learn how to set up your single-module Gateway solution by following the [instructions.](https://techdocs.broadcom.com/content/broadcom/techdocs/us/en/ca-enterprise-software/layer7-api-management/gateway-policy-plugin/1-0.html)
+
+For information about API Gateway Policy Plugin, see [TechDocs.](https://techdocs.broadcom.com/content/broadcom/techdocs/us/en/ca-enterprise-software/layer7-api-management/gateway-policy-plugin/1-0.html)
+<!---
 
 # Giving Back
 ## How You Can Contribute
@@ -19,3 +22,4 @@ of the MIT license. See the [LICENSE][license-link] file for details.
 
  [license-link]: /LICENSE
  [contributing]: /CONTRIBUTING.md
+--->
